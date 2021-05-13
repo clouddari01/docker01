@@ -4,8 +4,13 @@ metadata:
   name: wordpress
   labels:
     app: wordpress    
+    tier: frontend  
 spec:
-  replicas: 3  
+  replicas: 3
+  selector:
+   matchLabels:
+     app: wordpress
+     tier: frontend  
   strategy:
     type: Recreate
   template:
@@ -14,10 +19,6 @@ spec:
         app: wordpress
         tier: frontend
     spec:
-      #selector:
-        #matchLabels:
-          #app: wordpress
-          #tier: frontend
       containers:
       - image: wordpress:4.8-apache
         name: wordpress
