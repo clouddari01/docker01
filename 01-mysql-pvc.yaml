@@ -6,7 +6,8 @@ metadata:
     app: wordpress
 spec:
   accessModes:
-    - ReadWriteOnce   
+    - ReadWriteOnce
+    - ReadOnlyMany   
   resources:
     requests:
       storage: 20Gi
