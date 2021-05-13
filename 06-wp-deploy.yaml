@@ -22,9 +22,9 @@ spec:
       containers:
       - image: wordpress:4.8-apache
         name: wordpress
-        resources:
-          requests:
-            cpu: 200m
+        #resources:
+          #requests:
+            #cpu: 200m
         env:
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
