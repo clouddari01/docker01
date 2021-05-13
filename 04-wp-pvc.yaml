@@ -7,8 +7,7 @@ metadata:
     tier: frontend
 spec:
   accessModes:
-    - ReadWriteOnce
-    - ReadOnlyMany  
+    - ReadWriteOnce    
   resources:
     requests:
       storage: 20Gi
