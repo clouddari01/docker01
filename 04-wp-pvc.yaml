@@ -4,6 +4,7 @@ metadata:
   name: wp-pv-claim
   labels:
     app: wordpress
+    tier: frontend
 spec:
   accessModes:
     - ReadWriteOnce
